@@ -1,0 +1,33 @@
+package actividades_de_aplicacion;
+
+import java.util.Scanner;
+
+public class Actividad_1_22 {
+
+	public static void main(String[] args) {
+
+		// La FILA (Federación Internacional de Lanzamiento de Algoritmo) realiza una
+		// competición donde cada participante escribe un algoritmo en un papel y lo
+		// lanza, ganando quien consigue lanzarlo más lejos. La peculiaridad del
+		// concurso es que la longitud del lanzamiento se mide en metros (con tantos
+		// decimales como se desee), pero para el ranking solo se tiene en cuenta la
+		// longitud en centímetros (sin decimales). Por ejemplo, para un lanzamiento de
+		// 12,3456 m ( que son 1234,56 cm ) solo se contabilizarán 1234 cm.
+
+		// Realiza un programa que solicite la longitud (en metros) de un lanzamiento y
+		// muestra la parte entera correspondiente en centímetros.
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Introduce la longitud del lanzamiento en metros");
+		double lanzaM = Double.parseDouble(sc.nextLine());
+
+		int lanzaCm = (int) (lanzaM * 100);
+
+		System.out.println("Tu lanzamiento ha alcanzado " + lanzaCm + " centímetros.");
+
+		sc.close();
+
+	}
+
+}
