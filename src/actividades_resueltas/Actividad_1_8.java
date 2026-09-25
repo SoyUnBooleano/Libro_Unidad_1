@@ -14,7 +14,9 @@ public class Actividad_1_8 {
 		System.out.println("Introduce tu edad");
 		int edad = Integer.parseInt(sc.nextLine());
 
-		System.out.println(edad >= 18);
+		boolean adulto = edad >= 18;
+
+		System.out.println("El usuario es adulto " + adulto);
 
 		sc.close();
 

@@ -8,17 +8,16 @@ public class Actividad_1_14 {
 
 		// Realizar un programa que pida como entrada un número decimal y lo muestre
 		// redondeado al entero más próximo.
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.println("Introduce un número decimal");
 		double num = Double.parseDouble(sc.nextLine());
-		
-		double redo = num + 0.5;
-		int redondeo = (int) redo;
-	
-		System.out.println(redondeo);
-		
+
+		int num2 = (int) Math.round(num);
+
+		System.out.println(num2);
+
 		sc.close();
 
 	}

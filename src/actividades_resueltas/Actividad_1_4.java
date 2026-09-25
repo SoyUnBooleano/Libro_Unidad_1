@@ -15,11 +15,9 @@ public class Actividad_1_4 {
 		System.out.println("Introduce el año en el que estamos");
 		int year = Integer.parseInt(sc.nextLine());
 		System.out.println("Introduce el año en el que naciste");
-		int birth = Integer.parseInt(sc.nextLine());
+		int born = Integer.parseInt(sc.nextLine());
 
-		int age = year - birth;
-
-		System.out.println("Tienes actualmente " + age + " años.");
+		System.out.println("El usuario tiene " + (year - born) + " años de edad.");
 
 		sc.close();
 

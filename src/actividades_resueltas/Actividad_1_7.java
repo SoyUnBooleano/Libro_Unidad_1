@@ -12,13 +12,13 @@ public class Actividad_1_7 {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Introduce el radio de una circunferencia");
+		System.out.println("Introduce el radio de la circunferencia y calcularé la longitud y el área de ésta.");
 		double radio = Double.parseDouble(sc.nextLine());
 
 		double longitud = 2 * Math.PI * radio;
 		double area = Math.PI * Math.pow(radio, 2);
 
-		System.out.printf("La longitud de la circunferencia es %.2f y el área es %.2f.\n", longitud, area);
+		System.out.printf("La longitud de la circunferencia es %.2f y su área es %.2f", longitud, area);
 
 		sc.close();
 

@@ -15,17 +15,16 @@ public class Actividad_1_13 {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Introduce la nota del primer trimestre");
-		int nota1 = Integer.parseInt(sc.nextLine());
+		int t1 = Integer.parseInt(sc.nextLine());
 		System.out.println("Introduce la nota del segundo trimestre");
-		int nota2 = Integer.parseInt(sc.nextLine());
+		int t2 = Integer.parseInt(sc.nextLine());
 		System.out.println("Introduce la nota del tercer trimestre");
-		int nota3 = Integer.parseInt(sc.nextLine());
+		int t3 = Integer.parseInt(sc.nextLine());
 
-		double mediaExp = (nota1 + nota2 + nota3) / 3.0;
-		int mediaCali = (int) mediaExp;
+		double exp = (t1 + t2 + t3) / 3.0;
+		int boletin = (int) exp;
 
-		System.out.printf("La media en el boletín de calificaciones es %d y la media del expediente académico es %.2f%n",
-				mediaCali, mediaExp);
+		System.out.printf("La media en el boletín es %d y la media en el expediente es %.2f", boletin, exp);
 
 		sc.close();
 

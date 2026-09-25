@@ -10,7 +10,9 @@ public class Actividad_1_5 {
 		// mínimo.
 		
 		short a = 32767;
-		System.out.println(++a);
+		short b = ++a;
+		
+		System.out.println(b);
 
 	}
 

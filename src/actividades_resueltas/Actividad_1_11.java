@@ -14,21 +14,22 @@ public class Actividad_1_11 {
 
 		Scanner sc = new Scanner(System.in);
 
-		final double kiloManzana = 2.35;
-		final double kiloPera = 1.95;
+		final double pManzana = 2.35, pPera = 1.95;
 
-		System.out.println("Introduce cuantos kilos de manzanas vendiste durante el primer semestre");
-		double sem1Man = Double.parseDouble(sc.nextLine());
-		System.out.println("Introduce cuantos kilos de manzanas vendiste durante el segundo semestre");
-		double sem2Man = Double.parseDouble(sc.nextLine());
-		System.out.println("Introduce cuantos kilos de peras vendiste durante el primer semestre");
-		double sem1Per = Double.parseDouble(sc.nextLine());
-		System.out.println("Introduce cuantos kilos de peras vendiste durante el segundo semestre");
-		double sem2Per = Double.parseDouble(sc.nextLine());
+		System.out.println("Introduce cuantos kilos de manzana has vendido en el primer semestre");
+		int s1Manzana = Integer.parseInt(sc.nextLine());
+		System.out.println("Introduce cuantos kilos de peras has vendido en el primer semestre");
+		int s1Pera = Integer.parseInt(sc.nextLine());
+		System.out.println("Introduce cuantos kilos de manzana has vendido en el segundo semestre");
+		int s2Manzana = Integer.parseInt(sc.nextLine());
+		System.out.println("Introduce cuantos kilos de peras has vendido en el segundo semestre");
+		int s2Pera = Integer.parseInt(sc.nextLine());
 
-		double total = (sem1Man + sem2Man) * kiloManzana + (sem1Per + sem2Per) * kiloPera;
+		double bManzana = pManzana * (s1Manzana + s2Manzana);
+		double bPera = pPera * (s1Pera + s2Pera);
+		double total = bPera + bManzana;
 
-		System.out.printf("El importe total es de %.2f €.", total);
+		System.out.printf("Has ganado %.2f € en total", total);
 
 		sc.close();
 

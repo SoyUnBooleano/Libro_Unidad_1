@@ -18,16 +18,18 @@ public class Actividad_1_10 {
 		// permiso para ir a la calle.
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿Llueve?");
-		boolean lluvia = Boolean.parseBoolean(sc.nextLine());
-		System.out.println("¿Has termino las tareas?");
-		boolean finTareas = Boolean.parseBoolean(sc.nextLine());
-		System.out.println("¿Necesitas ir a la bibilioteca?");
-		boolean biblio = Boolean.parseBoolean(sc.nextLine());
 
-		boolean salida = biblio || (!lluvia && finTareas);
+		System.out.println("¿Está lloviendo?");
+		boolean rain = Boolean.parseBoolean(sc.nextLine());
+		System.out.println("¿Has finalizado tus tareas?");
+		boolean done = Boolean.parseBoolean(sc.nextLine());
+		System.out.println("¿Necesitas ir a la biblioteca?");
+		boolean book = Boolean.parseBoolean(sc.nextLine());
 
-		System.out.println("Puedes salir a la calle -> " + salida);
+		boolean exit = (!rain && done) || book;
+
+		System.out.println("¿Puedes salir a la calle? " + exit);
+
 		sc.close();
 
 	}

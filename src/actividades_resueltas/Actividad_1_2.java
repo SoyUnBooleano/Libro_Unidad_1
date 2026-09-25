@@ -14,7 +14,7 @@ public class Actividad_1_2 {
 		System.out.println("Introduce un número");
 		int num = Integer.parseInt(sc.nextLine());
 
-		System.out.println("El numero que has introducido es " + num);
+		System.out.println("El número introducido es " + num);
 
 		sc.close();
 	}

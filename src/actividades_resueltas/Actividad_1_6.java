@@ -11,14 +11,14 @@ public class Actividad_1_6 {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Ingresa la primera nota");
+		System.out.println("Introduce la primera nota");
 		int nota1 = Integer.parseInt(sc.nextLine());
-		System.out.println("Ingresa la segunda nota");
+		System.out.println("Introduce la segunda nota");
 		int nota2 = Integer.parseInt(sc.nextLine());
 
 		double media = (nota1 + nota2) / 2.0;
 
-		System.out.printf("La nota media es %.1f", media);
+		System.out.printf("Tu nota media es %.2f", media);
 
 		sc.close();
 

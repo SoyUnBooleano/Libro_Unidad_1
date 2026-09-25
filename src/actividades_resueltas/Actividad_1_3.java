@@ -12,8 +12,9 @@ public class Actividad_1_3 {
 
 		System.out.println("Introduce tu edad");
 		int edad = Integer.parseInt(sc.nextLine());
-		System.out.println("El año que viene tendrás " + ++edad);
-		
+
+		System.out.println("El año que viene tendrás " + (edad + 1) + " años.");
+
 		sc.close();
 
 	}

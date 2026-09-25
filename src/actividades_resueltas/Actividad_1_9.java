@@ -14,7 +14,9 @@ public class Actividad_1_9 {
 		System.out.println("Introduce un número");
 		int num = Integer.parseInt(sc.nextLine());
 
-		System.out.println(num % 2 == 0);
+		boolean par = num % 2 == 0;
+
+		System.out.println("El número introducido es par " + par);
 
 		sc.close();
 

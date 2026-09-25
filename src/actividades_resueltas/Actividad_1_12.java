@@ -14,12 +14,11 @@ public class Actividad_1_12 {
 		System.out.println("Introduce un número");
 		int num = Integer.parseInt(sc.nextLine());
 
-		int absolut = num > -1 ? num : -num;
+		int abs = Math.abs(num);
 
-		System.out.println("El valor absoluto de " + num + " es " + absolut);
+		System.out.println("Su valor absoluto es " + abs);
 
 		sc.close();
-
 	}
 
 }
