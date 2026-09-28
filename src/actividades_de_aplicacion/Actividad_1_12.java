@@ -18,15 +18,16 @@ public class Actividad_1_12 {
 		// Si proporcioanas el número 2 o el 13, la salida de la aplicación deber 5 o 1,
 		// respectivamente. Pista: el operador módulo puede ser muy útil para solucionar
 		// esta actividad.
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.println("Introduce un número");
 		int num = Integer.parseInt(sc.nextLine());
-		
-		int num2 = num%7 != 0? (num%7 - 7) *-1: 0;
-		System.out.println(num2);
-		
+
+		int modulo = (7 - num%7) % 7;
+
+		System.out.println("A " + num + " hay que sumarle " + modulo + " para que sea múltiplo de 7.");
+
 		sc.close();
 
 	}

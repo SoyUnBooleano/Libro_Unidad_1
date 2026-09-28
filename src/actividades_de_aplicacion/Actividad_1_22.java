@@ -17,16 +17,7 @@ public class Actividad_1_22 {
 		// Realiza un programa que solicite la longitud (en metros) de un lanzamiento y
 		// muestra la parte entera correspondiente en centímetros.
 
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("Introduce la longitud del lanzamiento en metros");
-		double lanzaM = Double.parseDouble(sc.nextLine());
-
-		int lanzaCm = (int) (lanzaM * 100);
-
-		System.out.println("Tu lanzamiento ha alcanzado " + lanzaCm + " centímetros.");
-
-		sc.close();
+	
 
 	}
 

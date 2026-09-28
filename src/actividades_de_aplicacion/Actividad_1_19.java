@@ -15,27 +15,7 @@ public class Actividad_1_19 {
 		// En el caso de que el importe total sera igual o superior a 100€, se aplicará
 		// automáticamente un un bono descuento del 5%.
 
-		Scanner sc = new Scanner(System.in);
-
-		final double entradaInfantil = 15.50;
-		final double entradaAdulto = 20;
-
-		System.out.println("Introduce cuantas entradas infantiles has vendido");
-		int numInfantil = Integer.parseInt(sc.nextLine());
-		System.out.println("Introduce cuantas entradas adultas has vendido");
-		int numAdulto = Integer.parseInt(sc.nextLine());
-
-		double total = (entradaInfantil * numInfantil) + (entradaAdulto * numAdulto);
-		double descuento = total >= 100 ? total * 0.95 : total;
-		descuento = Math.round(descuento * 100.0) / 100.0;
-
-		String mensaje = (total >= 100)
-				? "Se ha aplicado un descuento del 5% y el precio final de las entradas es " + descuento + " €"
-				: "El precio total de las entradas es de " + descuento + " €";
-
-		System.out.println(mensaje);
-
-		sc.close();
+		
 
 	}
 
