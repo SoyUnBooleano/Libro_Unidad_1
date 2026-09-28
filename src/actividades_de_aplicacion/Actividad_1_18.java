@@ -20,7 +20,20 @@ public class Actividad_1_18 {
 
 		// La aplicación debe mostrar el número total de patas
 
-		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Introduce la cantidad de hormigas capturadas");
+		int hormiga = Integer.parseInt(sc.nextLine());
+		System.out.println("Introduce la cantidad de arañas capturadas");
+		int arana = Integer.parseInt(sc.nextLine());
+		System.out.println("Introduce la cantidad de cochinillas capturadas");
+		int cochinilla = Integer.parseInt(sc.nextLine());
+
+		int total = (hormiga * 6) + (arana * 8) + (cochinilla * 14);
+
+		System.out.println("El total de patas capturadas es de " + total);
+
+		sc.close();
 
 	}
 
